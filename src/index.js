@@ -1,6 +1,6 @@
 
 import { initializeApp } from "firebase/app";
-import { getFirestore, doc, setDoc } from "firebase/firestore";
+import { getFirestore, doc, setDoc, collection, query, where, getDocs} from "firebase/firestore";
 
 
 const firebaseConfig = {
@@ -17,15 +17,30 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 const db = getFirestore(app);
 
-
-setDoc(doc(db, "companies", "company1"), {
-  name: "Company 1",
-  culture: "strict",
+// Lägg till företag i databasen
+setDoc(doc(db, "companies", "company13"), {
+  name: "IoT Innovators",
+  culture: "relaxed",
   size: "startup",
-  workplace: "remote"
+  workplace: "remote",
+  industry: "IoT"
 }).then(() => {
     console.log("Funkar, skickat!");
 }).catch((error) => {
     console.error("Gick inte, error!: ", error);
 });
 
+
+//sortera företagen
+async function getRemoteStartups() {
+  const companiesRef = collection(db, "companies");
+
+  const q = query(companiesRef, where("workplace", "==", "remote"), where("size", "==", "startup"));
+
+  const querySnapshot = await getDocs(q);
+  querySnapshot.forEach((doc) => {
+    console.log(doc.id, " => ", doc.data());
+  });
+}
+
+getRemoteStartups();
