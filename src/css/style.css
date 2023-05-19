@@ -1,13 +1,13 @@
-/*Variables*/
+/* Variables */
 :root {
     --primary-color: #1756F8;
-    --secondary-color: #B5F6FA;
-    --accent-color: #95EDF2;
-    --more-blue: #70CBE8;
+    --secondary-color: #70CBE8;
+    --accent-color: #95EDF2;    
+    --bg-color: #B5F6FA;
     --white: #FFF9F9;
 }
 
-/*General styles*/
+/* General styles */
 * {
     padding: 0;
     margin: 0;
@@ -21,7 +21,7 @@ body {
     align-items: center;
     flex-direction: column;
     min-height: 100dvh;
-    background-color: lightblue;
+    background-color: var(--bg-color);
 }
 
 
@@ -34,23 +34,29 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 1rem;
-    background-color: blue;
+    border-bottom: 3px solid var(--white);
+    border-radius: 0 0 0 3rem;
+    background-color: var(--secondary-color);
 }
 
-.logo a {
-
+.logo a{
     text-decoration: none;
-    color: white;
+    color: var(--white);
+    padding: 1rem;
+    font-size: 1.75rem;
+    font-weight: 700;
 }
 
 header div a {
+    font-size: 1.25rem;
+    font-weight: 500;
     margin: 1rem;
     text-decoration: none;
-    color: black;
+    color: var(--white);
 }
 
 
-/* Main*/
+/* Main */
 main{
     margin-top: 6rem;
     flex-grow: 1;
@@ -59,7 +65,7 @@ main{
 }
 
 
-/* Footer*/
+/* Footer */
 footer {
     display: flex;
     flex-direction: column;
