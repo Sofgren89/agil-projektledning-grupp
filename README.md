@@ -2,7 +2,7 @@
 
 # Project Title: LIA-Platform
 
-This project aims to build a centrelized platform to connect students from swedish Education and Traning programs (YH) with companies that offer Work-Based learning (LIA) placements.
+This project aims to build a centrelized platform to connect students from swedish Education and Traning programs (YH - YrkesHögskola) with companies that offer Work-Based learning (LIA) placements.
 
 ## Overview 
 
