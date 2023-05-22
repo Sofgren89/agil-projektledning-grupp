@@ -15,3 +15,25 @@ This platform is designed to be a solution for YH students looking for LIA place
 * A robust matching algorithm to suggest the most suitble opportunities to students based on their profile.
 * A direct communikation channel between students and companies to facilitate the application process.
 * A continous feedback mechanism to improve the platform and its functionalitites.
+
+## Getting Started
+
+These instructions will gget you a copy of the project up and running on your local machine for developement and testing purposes.
+
+### prerequisities
+
+* A werb browser
+* Node.js installed
+* Git installed
+
+### Installation
+
+1. Clone the repo
+
+```
+git clone https://github.com/RobinGrit22/agil-projektledning-grupp
+```
+2. Install NPM packages
+
+````
+npm install
