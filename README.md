@@ -10,4 +10,8 @@ This platform is designed to be a solution for YH students looking for LIA place
 
 ## Key Features
 
-*
+* An intuitive interfaces that allows students to easily search for LIA opportunities.
+* A comprehensive database of companies offering LIA placements.
+* A robust matching algorithm to suggest the most suitble opportunities to students based on their profile.
+* A direct communikation channel between students and companies to facilitate the application process.
+* A continous feedback mechanism to improve the platform and its functionalitites.
