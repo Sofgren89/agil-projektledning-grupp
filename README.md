@@ -37,3 +37,38 @@ git clone https://github.com/RobinGrit22/agil-projektledning-grupp
 
 ````
 npm install
+
+````
+
+## Usage
+
+To start the local server, run the following command in your terminal:
+
+````
+npm run dev
+````
+
+## Contributing
+
+We appreciate your contributions! Please follow these steps to contribute to this project:
+
+  1. Fork the prject
+  2. Create your Feature Branch(`git checkout -b`)
+  3. Commit your changes (`git commit -m + write your changes`)
+  4. Push to the branch (`git push origin`)
+  5. Open a Pull request
+
+## Project Team
+
+* Eddies Peters - Developer
+* Eleonora Nocentini Sköldebrink - Developer
+* Felix Wong - UX/UI Developer
+* Milan Tran - Developer
+* Martin Bugner - Developer
+* Robin Bognar - Developer
+* Anton Söfgren - Developer
+
+## Contact
+
+If you have any questions, feel free to contact us.
+
